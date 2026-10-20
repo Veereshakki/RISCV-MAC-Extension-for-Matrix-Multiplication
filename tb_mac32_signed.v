@@ -5,7 +5,7 @@ module tb_mac32_signed;
     reg               rst_n;
 
     reg               mac_en;
-    reg               mac_init;
+    reg               mac_init; //initialize aac
 
     reg signed [31:0] a;
     reg signed [31:0] b;
