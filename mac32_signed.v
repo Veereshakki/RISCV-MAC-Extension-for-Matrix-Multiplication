@@ -1,0 +1,41 @@
+module mac32_signed (
+    input              clk,
+    input              rst_n,
+
+    input              mac_en,
+    input              mac_init,
+
+    input  signed [31:0] a,
+    input  signed [31:0] b,
+
+    output reg signed [63:0] acc
+);
+
+    reg signed [63:0] product;
+    reg signed [63:0] acc_next;
+
+    always @(*) begin
+        product = $signed(a) * $signed(b);
+    end
+
+    always @(*) begin
+
+        if (mac_init)
+            acc_next = product;
+        else
+            acc_next = acc + product;
+
+    end
+
+
+    always @(posedge clk or negedge rst_n) begin
+
+        if (!rst_n)
+            acc <= 64'sd0;
+
+        else if (mac_en)
+            acc <= acc_next;
+
+    end
+
+endmodule

@@ -1,0 +1,15 @@
+{F:/VIT academics/3rd_sem/mac_design/tb_mac32_signed.v} {1 {vlog -work work -stats=none {F:/VIT academics/3rd_sem/mac_design/tb_mac32_signed.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_mac32_signed
+
+Top level modules:
+	tb_mac32_signed
+
+} {} {}} {F:/VIT academics/3rd_sem/mac_design/mac32_signed.v} {1 {vlog -work work -stats=none {F:/VIT academics/3rd_sem/mac_design/mac32_signed.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mac32_signed
+
+Top level modules:
+	mac32_signed
+
+} {} {}}

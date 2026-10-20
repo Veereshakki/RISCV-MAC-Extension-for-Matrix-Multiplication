@@ -1,0 +1,5 @@
+ls
+# mac32_signed.v        mac_32_signed.mpf      transcript  
+# mac32_signed.v.bak    tb_mac32_signed.v      vsim.wlf    
+# mac_32_signed.cr.mti  tb_mac32_signed.v.bak  work        
+cd
